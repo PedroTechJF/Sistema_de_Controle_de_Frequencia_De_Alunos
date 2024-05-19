@@ -120,6 +120,12 @@ ALTER TABLE `usuarios_escolas`
   ADD CONSTRAINT `fk_usuarios_escola_escola` FOREIGN KEY (`escola_id`) REFERENCES `escolas` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 COMMIT;
 
+INSERT INTO `escolas` (`nome`, `cnpj`, `telefone`, `email`, `cep`, `logradouro`, `num`, `bairro`, `complemento`, `cidade`, `estado`) VALUES
+('SENAI CFP JFN', '03773700000107', '3232392233', 'cfp-jfn@fiemg.com.br', '36035000', 'Av. Rio Branco', '1219', 'Centro', NULL, 'Juiz de Fora', 'MG');
+
+INSERT INTO `usuarios_escolas` (`login`, `senha`, `nome`, `escola_id`) VALUES
+('admin', '21232f297a57a5a743894a0e4a801fc3', 'Admin', 1);
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
