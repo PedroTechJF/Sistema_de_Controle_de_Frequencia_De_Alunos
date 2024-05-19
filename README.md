@@ -5,6 +5,8 @@ Esse sistema foi proposto como uma atividade no Curso Técnico de Desenvolviment
 
 A ideia do sistema é realizar todo o controle da frequência dos alunos da instituição, permitindo o envio de relátorios mensais de faltas para empresas parceiras, as quais muitos alunos possuem vínculo. 
 
+## Tipos de Acesso
+
 O sistema possui dois tipos de acesso, com usuários individuais:
 - Escola: 
     - Pode cadastrar uma nova empresa no sistema;
@@ -14,8 +16,6 @@ O sistema possui dois tipos de acesso, com usuários individuais:
 
 - Empresa:
     - Listar todos os Relatórios enviados para ela, podendo realizar o download de cada um;
-
-
 
 ## Funcionalidades
 
